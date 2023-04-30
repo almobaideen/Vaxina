@@ -1,0 +1,40 @@
+/* Center child elements */
+.app-container,
+.result-qr-code,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+}
+.result-qr-code {
+  display: none;
+}
+.app-container,
+.result-qr-code {
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#user-input {
+  font-size: 18px;
+  padding: 2px 5px;
+}
+
+button {
+  margin-top: 10px;
+  border: 2px solid #383636;
+  color: #fff;
+  font-weight: 600;
+  background-color: #383636;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-family: "Lato", sans-serif;
+}
+button:hover {
+  opacity: 0.9;
+}

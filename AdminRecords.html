@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.6.13, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="">
+  <meta property="og:image" content="">
+  <meta name="twitter:title" content="Records">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo-86x102.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Records</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/acss.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="./block.js"></script>
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-r">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-86x102.png" alt="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="index.html">Vaxina</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="AdminRecords.html">Records&nbsp;</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" onclick="viewUserDoctor()" href="usersLists.html">Accounts</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" onclick="ConnectTest()" href="AccountAdmin.html">Admin Dashborad&nbsp;</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Log Out</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+<section data-bs-version="5.1" class="content14 cid-tkR3yD8Hge" id="content14-z">
+        
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-4 display-5">
+                        <strong>Vaccination Record</strong></h3>
+                <ul class="list mbr-fonts-style display-7"></ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 form-group mb-3" data-for="doctorvaccinename">
+                <input type="text" name="doctorvaccinename" placeholder="Enter The Vaccine Name" data-form-field="doctorvaccinename" class="form-control" value="" id="doctorvaccinename">
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 form-group mb-3" data-for="drecordsSubmit">
+                <input type="text" name="drecordsSubmit" placeholder="Enter the User Account" data-form-field="drecordsSubmit" class="form-control" value="" id="drecordsSubmit">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                <button type="submit" onclick="adRecords()" class="btn btn-primary display-4" style="background: #0D5c75;">Show Vaccination Records</button>
+            </div>
+            
+            
+            <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                <button type="submit" onclick="ress()" class="btn btn-primary display-4" style="background: #0D5c75;">Hide Vaccination Records</button>
+            </div>
+        </div>
+
+        <section style="background-color: #FFFF;" data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-s">
+            <div class="page-content page-container" id="page-content">
+                <div class="padding">
+                    <div class="row container d-flex justify-content-center">
+            <div class="col-xl-6 col-md-12">
+                                                            <div class="card user-card-full">
+                                                                <div class="row m-l-0 m-r-0">
+                                                                    <div class="col-sm-4 bg-c-lite-green user-profile">
+                                                                        <div class="card-block text-center text-white">
+                                                                            <div class="m-b-25">
+                                                                                <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
+                                                                            </div>
+                                                                            <h6 id="nameRecordu" class="f-w-600"></h6>
+                                                                            <p>Vaxina User</p>
+                                                                            <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="card-block">
+                                                                            <h4 class="m-b-20 p-b-5 b-b-default f-w-600">Vaccination Record
+                                                                            </h6>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6">
+                                                                                    <p class="m-b-10 f-w-600">Vaccine</p>
+                                                                                    <h6 id="vaccineRu" class="text-muted f-w-400"></h6>
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <p class="m-b-10 f-w-600">Type of Vaccine</p>
+                                                                                    <h6 id="typeOfVaccineRu" class="text-muted f-w-400"></h6>
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <p class="m-b-10 f-w-600">Date</p>
+                                                                                    <h6 id="creationDateRu" class="text-muted f-w-400"></h6>
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <p class="m-b-10 f-w-600">Description</p>
+                                                                                    <h6 id="vdescriptionRu" class="text-muted f-w-400"></h6>
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <p class="m-b-10 f-w-600">User Account</p>
+                                                                                    <h6 id="userEadderssRu" class="text-muted f-w-400"></h6>
+                                                                                </div>.
+                                                                                <div class="col-sm-6">
+                                                                                    <p class="m-b-10 f-w-600">Doctor Account</p>
+                                                                                    <h6 id="doctorEaddressRu" class="text-muted f-w-400"></h6>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                     </div>
+                     </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-tlsxr5YXYw" id="form5-12">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Creating Vaccination Record</strong><br></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            <!--*************************************    <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"> -->
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Successful Vaccination Creation Process</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12 form-group mb-3" data-for="namevrap">
+                            <input type="text" name="namevrap" placeholder="Name" data-form-field="namevrap" class="form-control" value="" id="namevrap">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="vaccineap">
+                            <input type="text" name="vaccineap" placeholder="Vaccine" data-form-field="vaccineap" class="form-control" value="" id="vaccineap">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="typeOfVaccineap">
+                            <input type="text" name="typeOfVaccineap" placeholder="Type of Vaccine" data-form-field="typeOfVaccineap" class="form-control" value="" id="typeOfVaccineap">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="vdescriptionap">
+                            <input type="text" name="vdescriptionap" placeholder="Vaccine Description" data-form-field="vdescriptionap" class="form-control" value="" id="vdescriptionap">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="creationDateap">
+                            <input type="text" name="creationDateap" placeholder="Date and Time" data-form-field="creationDateap" class="form-control" value="" id="creationDateap">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="userEadderssap">
+                            <input type="text" name="userEadderssap" placeholder="User Account" data-form-field="userEadderssap" class="form-control" value="" id="userEadderssap">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="doctorEaddressap">
+                            <input type="text" name="doctorEaddressap" placeholder="Doctor Account" data-form-field="doctorEaddressap" class="form-control" value="" id="doctorEaddressap">
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" onclick="createVaccineap()" class="btn btn-primary display-4">Create vaccine Record</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    
+<section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-i">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-links">
+                <ul class="foot-menu">
+             
+          </div>
+            <div class="row social-row">
+                <div class="social-list align-right pb-2">
+
+                    
+                <div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                        </a>
+                    </div></div>
+            </div>
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    © Copyright 2022 Vaxina. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7"><a href="https://mobiri.se/2891188"><a style="z-index:1" href="https://mobirise.com/web-page-maker.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+ 
+</body>
+</html>

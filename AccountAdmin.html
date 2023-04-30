@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.6.13, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="">
+  <meta property="og:image" content="">
+  <meta name="twitter:title" content="AccountAdmin">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo-86x102.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>AccountAdmin</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="./block.js"></script>
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-10">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-86x102.png" alt="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="index.html">Vaxina</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="AdminRecords.html">Records&nbsp;</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" onclick="viewUserDoctor()" href="usersLists.html">Accounts</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" onclick="ConnectTest()" href="AccountAdmin.html">Admin Dashborad&nbsp;</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Log Out</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-tlsxr5YXYw" id="form5-12">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Registration</strong><br></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            <!--*************************************    <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"> -->
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Successful Registration Process</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12 form-group mb-3" data-for="uaeId">
+                            <input type="text" name="uaeId" placeholder="UAE ID" data-form-field="uaeId" class="form-control" value="" id="uaeIdAdmin">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="nameadmin">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="emailAdmin">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="gender">
+                            <input type="text" name="gender" placeholder="Gender" data-form-field="gender" class="form-control" value="" id="genderAdmin">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="phoneAdmin">
+                            <input type="text" name="phoneAdmin" placeholder="Phone Number" data-form-field="phoneAdmin" class="form-control" value="" id="phoneAdmin">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="dob">
+                            <input type="text" name="dob" placeholder="DOB" data-form-field="dob" class="form-control" value="" id="dobAdmin">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="addr">
+                            <input type="text" name="addr" placeholder="Address" data-form-field="addr" class="form-control" value="" id="addrAdmin">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="nomineeName">
+                            <input type="text" name="nomineeName" placeholder="nomineeName" data-form-field="nomineeName" class="form-control" value="" id="nomineeNameAdmin">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="nomineeContact">
+                            <input type="text" name="nomineeContact" placeholder="nomineeContact" data-form-field="nomineeContact" class="form-control" value="" id="nomineeContactAdmin">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="eAddress">
+                            <input type="text" name="eAddress" placeholder="Ethereum Address" data-form-field="eAddress" class="form-control" value="" id="eAddressAdmin">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" onclick="userRegistration()" class="btn btn-primary display-4" id="regesButton">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-tlsxr5YXYw" id="form5-12">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Modification</strong><br></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            <!--*************************************    <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"> -->
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Successful Modification Process</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12 form-group mb-3" data-for="uaeId">
+                            <input type="text" name="uaeId" placeholder="UAE ID" data-form-field="uaeId" class="form-control" value="" id="uaeIdAdminE">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="nameadminE">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="emailAdminE">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="gender">
+                            <input type="text" name="gender" placeholder="Gender" data-form-field="gender" class="form-control" value="" id="genderAdminE">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="phoneAdmin">
+                            <input type="text" name="phoneAdmin" placeholder="Phone Number" data-form-field="phoneAdmin" class="form-control" value="" id="phoneAdminE">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="dob">
+                            <input type="text" name="dob" placeholder="DOB" data-form-field="dob" class="form-control" value="" id="dobAdminE">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="addr">
+                            <input type="text" name="addr" placeholder="Address" data-form-field="addr" class="form-control" value="" id="addrAdminE">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="nomineeName">
+                            <input type="text" name="nomineeName" placeholder="nomineeName" data-form-field="nomineeName" class="form-control" value="" id="nomineeNameAdminE">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="nomineeContact">
+                            <input type="text" name="nomineeContact" placeholder="nomineeContact" data-form-field="nomineeContact" class="form-control" value="" id="nomineeContactAdminE">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="eAddress">
+                            <input type="text" name="eAddress" placeholder="Ethereum Address" data-form-field="eAddress" class="form-control" value="" id="eAddressAdminE">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" onclick="userEditing()" class="btn btn-primary display-4">Modify</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-tlsxr5YXYw" id="form5-12">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Doctor Registration</strong><br></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            <!--*************************************    <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"> -->
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Successful Doctor Registration Process</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12 form-group mb-3" data-for="uaeIdd">
+                            <input type="text" name="uaeIdd" placeholder="UAE ID" data-form-field="uaeIdd" class="form-control" value="" id="uaeIddR">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="named">
+                            <input type="text" name="named" placeholder="Name" data-form-field="named" class="form-control" value="" id="namedR">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="emaild">
+                            <input type="emaild" name="emaild" placeholder="E-mail" data-form-field="emaild" class="form-control" value="" id="emaildR">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="genderd">
+                            <input type="text" name="genderd" placeholder="Gender" data-form-field="genderd" class="form-control" value="" id="genderdR">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="phoned">
+                            <input type="text" name="phoned" placeholder="Phone Number" data-form-field="phoned" class="form-control" value="" id="phonedR">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="qualificationd">
+                            <input type="text" name="qualificationd" placeholder="Qualification" data-form-field="qualificationd" class="form-control" value="" id="qualificationdR">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="majord">
+                            <input type="text" name="majord" placeholder="Major" data-form-field="majord" class="form-control" value="" id="majordR">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="eAddressd">
+                            <input type="text" name="eAddressd" placeholder="Ethereum Address" data-form-field="eAddressd" class="form-control" value="" id="eAddressdR">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" onclick="doctorRegistration()" class="btn btn-primary display-4">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-tlsxr5YXYw" id="form5-12">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Doctor Modification</strong><br></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            <!--*************************************    <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"> -->
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Successful Doctor Modification Process</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12 form-group mb-3" data-for="uaeIdd">
+                            <input type="text" name="uaeIdd" placeholder="UAE ID" data-form-field="uaeIdd" class="form-control" value="" id="uaeIdd">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="named">
+                            <input type="text" name="named" placeholder="Name" data-form-field="named" class="form-control" value="" id="named">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="emaild">
+                            <input type="emaild" name="emaild" placeholder="E-mail" data-form-field="emaild" class="form-control" value="" id="emaild">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="genderd">
+                            <input type="text" name="genderd" placeholder="Gender" data-form-field="genderd" class="form-control" value="" id="genderd">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="phoned">
+                            <input type="text" name="phoned" placeholder="Phone Number" data-form-field="phoned" class="form-control" value="" id="phoned">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="qualificationd">
+                            <input type="text" name="qualificationd" placeholder="Qualification" data-form-field="qualificationd" class="form-control" value="" id="qualificationd">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="majord">
+                            <input type="text" name="majord" placeholder="Major" data-form-field="majord" class="form-control" value="" id="majord">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="eAddressd">
+                            <input type="text" name="eAddressd" placeholder="Ethereum Address" data-form-field="eAddressd" class="form-control" value="" id="eAddressd">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" onclick="doctorEditing()" class="btn btn-primary display-4">Modify</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-tlsxr5YXYw" id="form5-12">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Creating Vaccination Record</strong><br></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            <!--*************************************    <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"> -->
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Successful Vaccination Creation Process</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12 form-group mb-3" data-for="namevr">
+                            <input type="text" name="namevr" placeholder="Name" data-form-field="namevr" class="form-control" value="" id="namevr">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="vaccine">
+                            <input type="text" name="vaccine" placeholder="Vaccine" data-form-field="vaccine" class="form-control" value="" id="vaccine">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="typeOfVaccine">
+                            <input type="text" name="typeOfVaccine" placeholder="Type of Vaccine" data-form-field="typeOfVaccine" class="form-control" value="" id="typeOfVaccine">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="vdescription">
+                            <input type="text" name="vdescription" placeholder="Vaccine Description" data-form-field="vdescription" class="form-control" value="" id="vdescription">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="creationDate">
+                            <input type="text" name="creationDate" placeholder="Date and Time" data-form-field="creationDate" class="form-control" value="" id="creationDate">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="userEadderss">
+                            <input type="text" name="userEadderss" placeholder="User Account" data-form-field="userEadderss" class="form-control" value="" id="userEadderss">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="doctorEaddress">
+                            <input type="text" name="doctorEaddress" placeholder="Doctor Account" data-form-field="doctorEaddress" class="form-control" value="" id="doctorEaddress">
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" onclick="createVaccineap()" class="btn btn-primary display-4">Create vaccine Record</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form9 cid-tlsxtZQBUo" id="form9-13">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Permissions</strong></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Permission Granted</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-lg-12">
+                            <p class="mbr-text mbr-fonts-style align-center mb-4 display-7"> Enter the addresses of the users</p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 form-group mb-3" data-for="userAddressP">
+                            <input type="text" name="userAddressP" placeholder="User Account Address" data-form-field="userAddressP" class="form-control" value="" id="userAddressP">
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 form-group mb-3" data-for="doctorAddressP">
+                            <input type="text" name="doctorAddressP" placeholder="User Account Address" data-form-field="doctorAddressP" class="form-control" value="" id="doctorAddressP">
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 mbr-section-btn align-center">
+                            <button type="submit" onclick="revokingPermission()" class="btn btn-primary display-4" id="revokePermissionAA">Revoke Permission</button>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 mbr-section-btn align-center">
+                            <button type="submit" onclick="givingPermission()" class="btn btn-primary display-4" id="givePermissionAA">Give Permission</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form9 cid-tlsxtZQBUo" id="form9-13">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Permissions of Creating Vaccination Records</strong></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Permission Granted</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-lg-12">
+                            <p class="mbr-text mbr-fonts-style align-center mb-4 display-7"> Enter the addresses of the users</p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 form-group mb-3" data-for="userAddressP">
+                            <input type="text" name="userAddressP" placeholder="User Account Address" data-form-field="userAddressP" class="form-control" value="" id="userAddressPD">
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 form-group mb-3" data-for="doctorAddressP">
+                            <input type="text" name="doctorAddressP" placeholder="Doctor Account Address" data-form-field="doctorAddressP" class="form-control" value="" id="doctorAddressPD">
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 mbr-section-btn align-center">
+                            <button type="submit" onclick="revokingPermissiontd()" class="btn btn-primary display-4" id="revokePermissionAA">Revoke Permission</button>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 mbr-section-btn align-center">
+                            <button type="submit" onclick="givingPermissiontd()" class="btn btn-primary display-4" id="givePermissionAA">Give Permission</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--*************************************-->
+
+<section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-i">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-links">
+                <ul class="foot-menu">           
+            </div>
+            <div class="row social-row">
+                <div class="social-list align-right pb-2">
+                    
+                    
+                    
+                    
+                    
+                    
+                <div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="index.html" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                        </a>
+                    </div></div>
+            </div>
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    © Copyright 2022 Vaxina. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+  
+</section><section class="display-7"><a href="https://mobiri.se/2891188"><a style="z-index:1" href="https://mobirise.com/web-page-maker.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+ 
+</body>
+</html>

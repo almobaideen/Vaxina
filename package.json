@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "clientside-require": "^4.7.2",
+    "express": "^4.18.2",
+    "http-server": "^14.1.1",
+    "moralis": "^2.7.2",
+    "mysql2": "^2.3.3",
+    "qrcode": "^1.5.1",
+    "requier": "^0.0.1",
+    "web3": "^1.8.0"
+  }
+}
